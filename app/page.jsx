@@ -40,7 +40,8 @@ export default function Page() {
           options: {
             data: {
               username
-            }
+            },
+            emailRedirectTo: `${window.location.origin}/`
           }
         })
         if (authError) throw authError
